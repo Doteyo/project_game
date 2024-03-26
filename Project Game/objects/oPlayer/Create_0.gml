@@ -1,3 +1,3 @@
 /// @description 
 movespd = 5;
-health = 100;
+hp = 100;

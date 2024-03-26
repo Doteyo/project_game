@@ -38,3 +38,6 @@ if mouse_check_button_pressed(mb_left) {
     var _bullet_id = instance_create_depth(x, y, 10, oBullet);
     _bullet_id.direction = 90;
 }
+
+if hp <= 0
+	instance_destroy(self);
