@@ -35,7 +35,7 @@ y=clamp(y, 14, room_height-14);
 
 
 if mouse_check_button_pressed(mb_left) {
-    var _bullet_id = instance_create_depth(x, y, 10, oBullet);
+    var _bullet_id = instance_create_depth(x, y, 10, oPBullet);
     _bullet_id.direction = 90;
 }
 

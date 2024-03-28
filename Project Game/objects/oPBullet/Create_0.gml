@@ -1,2 +1,2 @@
 /// @description Вставьте описание здесь
-direction=image_angle+90;
+direction=90;
