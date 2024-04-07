@@ -1,3 +1,3 @@
-/// @description 
-instance_nearest(x,y,oPlayer).hp -= damage;
-instance_destroy(self);
+  /// @description 
+instance_nearest(x,y,oPlayer).take_damage(damage, false);
+instance_destroy(self);     
