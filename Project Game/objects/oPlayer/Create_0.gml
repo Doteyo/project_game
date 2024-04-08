@@ -1,6 +1,8 @@
 function take_damage(damage, is_laser) {
 	if (!is_invinsible) {
 		hp -= damage;
+		if hp <= 0
+			instance_destroy(self);
 		if (!is_laser) {
 			become_invisible(true);
 			alarm[0] = room_speed*inv_time;
