@@ -34,7 +34,7 @@ x=clamp(x, 8, room_width-8);
 y=clamp(y, 14, room_height-14);
 
 
-if mouse_check_button_pressed(mb_left) {
+if mouse_check_button_pressed(mb_left) | keyboard_check_pressed(vk_space) {
     var _bullet_id = instance_create_depth(x, y, 10, oPBullet);
     _bullet_id.direction = 90;
 }
