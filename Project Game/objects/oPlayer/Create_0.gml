@@ -3,7 +3,7 @@ function take_damage(damage, is_laser) {
 		hp -= damage;
 		if (!is_laser) {
 			become_invisible(true);
-			alarm[0] = room_speed;
+			alarm[0] = room_speed*inv_time;
 		}
 	}
 }
