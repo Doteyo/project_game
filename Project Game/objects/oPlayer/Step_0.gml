@@ -30,8 +30,8 @@ if (place_meeting(x,y+ _move_y,oWall)) {
 }
 y+=_move_y
 
-x=clamp(x, sprite_get_width(object_get_sprite(oPlayer))/2, room_width-sprite_get_width(object_get_sprite(oPlayer))/2);
-y=clamp(y, sprite_get_height(object_get_sprite(oPlayer))/2, room_height-sprite_get_height(object_get_sprite(oPlayer))/2);
+x=clamp(x, sprite_get_width(sprite_index)/2, room_width-sprite_get_width(sprite_index)/2);
+y=clamp(y, sprite_get_height(sprite_index)/2, room_height-sprite_get_height(sprite_index)/2);
 
 
 if mouse_check_button_pressed(mb_left) | keyboard_check_pressed(vk_space) {
