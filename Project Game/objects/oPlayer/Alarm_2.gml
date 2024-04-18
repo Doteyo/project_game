@@ -1,0 +1,1 @@
+cannot_shoot = false;
