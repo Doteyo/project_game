@@ -9,12 +9,17 @@
   ],
   "managed":true,
   "name":"oPoison",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"speed","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+  ],
   "parent":{
     "name":"Объекты",
     "path":"folders/Объекты.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBullet_parent",
+    "path":"objects/oBullet_parent/oBullet_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +34,6 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"speed","filters":[],"listItems":[],"multiselect":false,"name":"speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":1,},
     {"$GMObjectProperty":"","%Name":"slow_arr","filters":[],"listItems":[],"multiselect":false,"name":"slow_arr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":6,},
     {"$GMObjectProperty":"","%Name":"damage_arr","filters":[],"listItems":[],"multiselect":false,"name":"damage_arr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":6,},
   ],
