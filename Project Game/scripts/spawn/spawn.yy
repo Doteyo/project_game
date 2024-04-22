@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"sleep",
+  "%Name":"spawn",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"sleep",
+  "name":"spawn",
   "parent":{
-    "name":"Project Game",
-    "path":"Project Game.yyp",
+    "name":"Скрипты",
+    "path":"folders/Скрипты.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

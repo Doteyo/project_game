@@ -10,12 +10,12 @@ function take_damage(damage, is_laser) {
 
 
 function become_invisible(flag) {
+	is_invinsible = flag;
+	//flag ? image_blend = c_black : image_blend = c_white;
 	if (flag) {
-		is_invinsible = true;
 		image_blend = c_black;
 	}
 	else {
-		is_invinsible = false;
 		image_blend = c_white;
 	}
 }
