@@ -15,8 +15,9 @@ function spawn(){
 		instance_create_depth(_temp[0][1],_temp[0][2],10,_temp[0][3]);
 	}
 	array_delete(_temp, 0, 1);
-	if array_length(_temp) > 0
-		call_later(_temp[0][0], time_source_units_seconds, spawn);
+	if array_length(_temp) = 0
+		return;
+	call_later(_temp[0][0], time_source_units_seconds, spawn);
 }
 
 function _convert_time(_obj_array){

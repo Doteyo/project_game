@@ -1,4 +1,4 @@
-function take_damage(damage, is_laser) {
+function take_damage(damage, is_laser=false) {
 	if (!is_invinsible) {
 		hp -= damage;
 		if (!is_laser) {
@@ -6,12 +6,13 @@ function take_damage(damage, is_laser) {
 			alarm[0] = room_speed;
 		}
 	}
+	if hp <= 0
+		instance_destroy(self);
 }
 
 
 function become_invisible(flag) {
 	is_invinsible = flag;
-	//flag ? image_blend = c_black : image_blend = c_white;
 	if (flag) {
 		image_blend = c_black;
 	}

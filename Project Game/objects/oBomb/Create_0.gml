@@ -1,2 +1,4 @@
-move_towards_point(x+x_pos, y+y_pos, movespd);
-alarm[0] = room_speed * 2;
+function explode(){
+	instance_destroy(self);
+	instance_create_depth(x,y,10,oExplosion);
+}
