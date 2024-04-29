@@ -37,6 +37,7 @@
     {"name":"inst_754E8BB7","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2653ED8E","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2DCE1574","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_77B2DCE5","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -76,6 +77,10 @@
         {"$GMRInstance":"","%Name":"inst_754E8BB7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_754E8BB7","objectId":{"name":"oPoison","path":"objects/oPoison/oPoison.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-179.10004,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":64.0,},
         {"$GMRInstance":"","%Name":"inst_2653ED8E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2653ED8E","objectId":{"name":"oPoison","path":"objects/oPoison/oPoison.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":173.20534,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":48.0,},
         {"$GMRInstance":"","%Name":"inst_2DCE1574","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DCE1574","objectId":{"name":"oPasifict","path":"objects/oPasifict/oPasifict.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-180.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":112.0,},
+        {"$GMRInstance":"","%Name":"inst_77B2DCE5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_77B2DCE5","objectId":{"name":"oBoss_invinsible","path":"objects/oBoss_invinsible/oBoss_invinsible.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oBoss_invinsible","path":"objects/oBoss_invinsible/oBoss_invinsible.yy",},"propertyId":{"name":"time_left","path":"objects/oBoss_invinsible/oBoss_invinsible.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oBoss_invinsible","path":"objects/oBoss_invinsible/oBoss_invinsible.yy",},"propertyId":{"name":"time_decrement","path":"objects/oBoss_invinsible/oBoss_invinsible.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":208.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":30,"SerialiseWidth":40,"TileCompressedData":[
           -52,8,-4,9,-12,8,-4,9,-11,8,-4,9,-5,8,-4,9,-12,8,-4,9,-11,8,-4,9,-5,8,-4,9,-12,8,-4,9,-11,8,-4,9,-3,
