@@ -1,4 +1,2 @@
-var spawn_bullets = [];
-spawn_bullets[0] = [5,394,105,270];
-spawn_bullets[1] = [2,394,105,270];
-spawn_bullet(spawn_bullets);
+spawn_bullet([[5,240,100,270]])
+spawn_big_bullet([[2,526,254,45]])

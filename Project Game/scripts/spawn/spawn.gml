@@ -1,10 +1,17 @@
 /// @desc  Function for delayed spawning objects
 /// @param {array} _obj_array [[t,x,y,obj,{}]]
 function spawn_obj(_obj_array){
-	array_sort(_obj_array, function(elm1, elm2){return elm1[0] > elm2[0]});
+	array_sort(_obj_array, function(e1, e2){return e1[0] > e2[0]});
 	_convert_time(_obj_array);
-	instance_create_depth(0,0,10,oSpawnData,{data: _obj_array});
-	call_later(_obj_array[0][0],time_source_units_seconds,spawn);
+	if not instance_nearest(0,0,oSpawnData){
+		instance_create_depth(0,0,10,oSpawnData,{data: _obj_array});
+		call_later(_obj_array[0][0],time_source_units_seconds,spawn);
+	}
+	else {
+		var _temp = array_concat(instance_nearest(0,0,oSpawnData).data, _obj_array)
+		array_sort(_temp, function(e1, e2){return e1[0] > e2[0]});
+		instance_nearest(0,0,oSpawnData).data = _temp;
+	}
 }
 
 /// @desc  Function that executes delayed spawn recursively
@@ -34,29 +41,32 @@ function _convert_time(_obj_array){
 
 
 /// @desc Function for delayed spawning bullets
-/// @param {array} _bull_array [[t,x,y,angle,speed*,damage*]]
+/// @param {array} _bull_array [[t,x,y,angle*,speed*,damage*]]
 function spawn_bullet(_bull_array){
+	var _params_array = [oBullet,["image_angle", function(a){return a - 90}],"speed","damage"]
+	spawn_obj(structurise_input_spawn(_bull_array, _params_array));
+}
+
+/// @desc Function for delayed spawning Big Bullets
+/// @param {array} _bull_array [[t,x,y,angle*,speed*,damage*]]
+function spawn_big_bullet(_bull_array){
+	var _params_array = [oBigBullet,["image_angle", function(a){return a - 90}],"speed","damage"]
+	spawn_obj(structurise_input_spawn(_bull_array, _params_array));
+}
+
+function structurise_input_spawn(_bull_array, _params_array){
 	var _temp_array = [];
 	for(var i = 0; i<array_length(_bull_array); i++){
 		_temp_array[i] = [];
 		array_copy(_temp_array[i], 0, _bull_array[i], 0, 4);
-		_temp_array[i][array_length(_temp_array[i])-1] = oBullet;
+		_temp_array[i][array_length(_temp_array[i])-1] = _params_array[0];
 		_temp_array[i][array_length(_temp_array[i])] = {};
-		for(var j = 3; j<array_length(_bull_array[i]); j++){
-			switch (j){
-				case 3:
-					_temp_array[i][array_length(_temp_array[i])-1].image_angle = _bull_array[i][j] - 90;
-				break
-				
-				case 4:
-					_temp_array[i][array_length(_temp_array[i])-1].speed = _bull_array[i][j];
-				break
-				
-				case 5:
-					_temp_array[i][array_length(_temp_array[i])-1].damage = _bull_array[i][j];
-				break
-			}
+		for(var j = 0; j<array_length(_bull_array[i])-3; j++){
+			if typeof(_params_array[j+1]) == "array"
+				_temp_array[i][array_length(_temp_array[i])-1][$ _params_array[j+1][0]] = _params_array[j+1][1](_bull_array[i][j+3]);
+			else
+				_temp_array[i][array_length(_temp_array[i])-1][$ _params_array[j+1]] = _bull_array[i][j+3];
 		}
 	}
-	spawn_obj(_temp_array);
+	return _temp_array;
 }
