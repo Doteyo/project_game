@@ -1,6 +1,7 @@
 /// @desc  Function for delayed spawning objects
 /// @param {array} _obj_array [[t,x,y,obj,{}]]
 function spawn_obj(_obj_array){
+	array_sort(_obj_array, function(elm1, elm2){return elm1[0] > elm2[0]});
 	_convert_time(_obj_array);
 	instance_create_depth(0,0,10,oSpawnData,{data: _obj_array});
 	call_later(_obj_array[0][0],time_source_units_seconds,spawn);
