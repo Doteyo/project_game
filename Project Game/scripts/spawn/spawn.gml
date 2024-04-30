@@ -44,18 +44,21 @@ function _convert_time(_obj_array){
 /// @param {array} _bull_array [[t,x,y,angle*,speed*,damage*]]
 function spawn_bullet(_bull_array){
 	var _params_array = [oBullet,["image_angle", function(a){return a - 90}],"speed","damage"]
-	spawn_obj(structurise_input_spawn(_bull_array, _params_array));
+	spawn_obj(structurize_input_spawn(_bull_array, _params_array));
 }
 
 /// @desc Function for delayed spawning Big Bullets
 /// @param {array} _bull_array [[t,x,y,angle*,speed*,damage*]]
 function spawn_big_bullet(_bull_array){
 	var _params_array = [oBigBullet,["image_angle", function(a){return a - 90}],"speed","damage"]
-	spawn_obj(structurise_input_spawn(_bull_array, _params_array));
+	spawn_obj(structurize_input_spawn(_bull_array, _params_array));
 }
 
-function structurise_input_spawn(_bull_array, _params_array){
-	var _temp_array = [];
+/// @desc Function for structurizing user input for spawning
+/// @param {array} _bull_array [[t,x,y,angle*,speed*,damage*]]
+/// @param {array} _params_array array with params for certain obj
+function structurize_input_spawn(_bull_array, _params_array){
+var _temp_array = [];
 	for(var i = 0; i<array_length(_bull_array); i++){
 		_temp_array[i] = [];
 		array_copy(_temp_array[i], 0, _bull_array[i], 0, 4);
