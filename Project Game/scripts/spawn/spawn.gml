@@ -24,19 +24,34 @@ function spawn_obj(_obj_array){
 /// @desc  Function that executes delayed spawn recursively
 function spawn(){
 	var _temp = instance_nearest(0,0,oSpawnData).data;
-	_convert_time(_temp);
-	instance_nearest(0,0,oSpawnData).data = _temp;
-	if(array_length(_temp[0]) == 5)
-	{
-		instance_create_depth(_temp[0][1],_temp[0][2],10,_temp[0][3],_temp[0][4])
-	}	
-	else{
-		instance_create_depth(_temp[0][1],_temp[0][2],10,_temp[0][3]);
+	if not instance_nearest(0,0,oSpawnData).converted{
+		_convert_time(_temp);
+		instance_nearest(0,0,oSpawnData).data = _temp;
+		instance_nearest(0,0,oSpawnData).converted = true;
 	}
+	
+	create_instace(_temp);
 	array_delete(_temp, 0, 1);
 	if array_length(_temp) = 0
 		return;
+	var _i = 0
+	while array_length(_temp) > 0 && _temp[0][0] == 0{
+		create_instace(_temp);
+		array_delete(_temp, 0, 1);
+	}
+	if array_length(_temp) = 0
+		return;
 	call_later(_temp[0][0], time_source_units_seconds, spawn);
+}
+
+function create_instace(_inst_arr){
+		if(array_length(_inst_arr[0]) == 5)
+	{
+		instance_create_depth(_inst_arr[0][1],_inst_arr[0][2],10,_inst_arr[0][3],_inst_arr[0][4])
+	}	
+	else{
+		instance_create_depth(_inst_arr[0][1],_inst_arr[0][2],10,_inst_arr[0][3]);
+	}
 }
 
 /// @desc Converts time to relative
@@ -44,7 +59,17 @@ function spawn(){
 function _convert_time(_obj_array){
 	for(var i = 1; i<array_length(_obj_array); i++)
 	{
-		_obj_array[i][0] -= _obj_array[i-1][0];
+		if _obj_array[i-1][0] == 0{
+			var _j = 0
+			for(_j = i -1; _j>=-1; _j--){
+				if _obj_array[_j][0] != 0
+					break
+			}
+			if _j != -1
+				_obj_array[i][0] -= _obj_array[_j][0];
+		}
+		else
+			_obj_array[i][0] -= _obj_array[i-1][0];
 	}
 }
 
