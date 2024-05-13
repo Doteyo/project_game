@@ -45,13 +45,10 @@ function spawn(){
 }
 
 function create_instace(_inst_arr){
-		if(array_length(_inst_arr[0]) == 5)
-	{
+	if(array_length(_inst_arr[0]) == 5)
 		instance_create_depth(_inst_arr[0][1],_inst_arr[0][2],10,_inst_arr[0][3],_inst_arr[0][4])
-	}	
-	else{
+	else
 		instance_create_depth(_inst_arr[0][1],_inst_arr[0][2],10,_inst_arr[0][3]);
-	}
 }
 
 /// @desc Converts time to relative

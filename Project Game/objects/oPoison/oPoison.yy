@@ -9,7 +9,7 @@
   "managed":true,
   "name":"oPoison",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"speed","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"speed","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
   ],
   "parent":{
     "name":"Объекты",
@@ -33,8 +33,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"slow_arr","filters":[],"listItems":[],"multiselect":false,"name":"slow_arr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":6,},
-    {"$GMObjectProperty":"","%Name":"damage_arr","filters":[],"listItems":[],"multiselect":false,"name":"damage_arr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":6,},
+    {"$GMObjectProperty":"v1","%Name":"slow_arr","filters":[],"listItems":[],"multiselect":false,"name":"slow_arr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":6,},
+    {"$GMObjectProperty":"v1","%Name":"damage_arr","filters":[],"listItems":[],"multiselect":false,"name":"damage_arr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":6,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
