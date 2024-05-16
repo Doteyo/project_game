@@ -34,7 +34,7 @@
     {"$GMObjectProperty":"v1","%Name":"time_left","filters":[],"listItems":[],"multiselect":false,"name":"time_left","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"time_decrement","filters":[],"listItems":[],"multiselect":false,"name":"time_decrement","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"is_ticked","filters":[],"listItems":[],"multiselect":false,"name":"is_ticked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"next_room","filters":[],"listItems":[],"multiselect":false,"name":"next_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Room2","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"next_room","filters":[],"listItems":[],"multiselect":false,"name":"next_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rmSecond","path":"rooms/rmSecond/rmSecond.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rmSecond","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
