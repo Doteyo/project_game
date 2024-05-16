@@ -72,6 +72,10 @@
     {"id":{"name":"ExplotionSprite","path":"sprites/ExplotionSprite/ExplotionSprite.yy",},},
     {"id":{"name":"PasifictSprite","path":"sprites/PasifictSprite/PasifictSprite.yy",},},
     {"id":{"name":"PosionSprite","path":"sprites/PosionSprite/PosionSprite.yy",},},
+    {"id":{"name":"sButton_back","path":"sprites/sButton_back/sButton_back.yy",},},
+    {"id":{"name":"sButton_exit","path":"sprites/sButton_exit/sButton_exit.yy",},},
+    {"id":{"name":"sButton_play","path":"sprites/sButton_play/sButton_play.yy",},},
+    {"id":{"name":"sButton_settings","path":"sprites/sButton_settings/sButton_settings.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"SpeedBullet","path":"sprites/SpeedBullet/SpeedBullet.yy",},},
     {"id":{"name":"spr_laser_strip","path":"sprites/spr_laser_strip/spr_laser_strip.yy",},},
@@ -90,8 +94,8 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"roomId":{"name":"rmFirst","path":"rooms/rmFirst/rmFirst.yy",},},
-    {"roomId":{"name":"rmMenu_settings","path":"rooms/rmMenu_settings/rmMenu_settings.yy",},},
     {"roomId":{"name":"rmSecond","path":"rooms/rmSecond/rmSecond.yy",},},
+    {"roomId":{"name":"rmMenu_settings","path":"rooms/rmMenu_settings/rmMenu_settings.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
