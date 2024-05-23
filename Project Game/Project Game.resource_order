@@ -54,6 +54,7 @@
     {"name":"sButton_play","order":19,"path":"sprites/sButton_play/sButton_play.yy",},
     {"name":"sButton_settings","order":20,"path":"sprites/sButton_settings/sButton_settings.yy",},
     {"name":"sButton","order":18,"path":"sprites/sButton/sButton.yy",},
+    {"name":"sLaser","order":23,"path":"sprites/sLaser/sLaser.yy",},
     {"name":"SpeedBullet","order":8,"path":"sprites/SpeedBullet/SpeedBullet.yy",},
     {"name":"spr_laser_strip","order":13,"path":"sprites/spr_laser_strip/spr_laser_strip.yy",},
     {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},

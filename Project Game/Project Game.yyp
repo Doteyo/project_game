@@ -77,6 +77,7 @@
     {"id":{"name":"sButton_play","path":"sprites/sButton_play/sButton_play.yy",},},
     {"id":{"name":"sButton_settings","path":"sprites/sButton_settings/sButton_settings.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
+    {"id":{"name":"sLaser","path":"sprites/sLaser/sLaser.yy",},},
     {"id":{"name":"SpeedBullet","path":"sprites/SpeedBullet/SpeedBullet.yy",},},
     {"id":{"name":"spr_laser_strip","path":"sprites/spr_laser_strip/spr_laser_strip.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
