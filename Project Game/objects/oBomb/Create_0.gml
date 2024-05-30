@@ -4,4 +4,5 @@ function explode(){
 }
 
 if (movespd==0){
+	alarm[0]=4*room_speed;
 }

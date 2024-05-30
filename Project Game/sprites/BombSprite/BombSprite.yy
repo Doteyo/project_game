@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"BombSprite",
   "bboxMode":0,
-  "bbox_bottom":49,
+  "bbox_bottom":99,
   "bbox_left":0,
-  "bbox_right":49,
+  "bbox_right":99,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":50,
+  "height":100,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"c9ed04c7-7996-4476-8b2a-84e5ba440c0b","blendMode":0,"displayName":"default","isLocked":false,"name":"c9ed04c7-7996-4476-8b2a-84e5ba440c0b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":50,
+  "width":100,
 }
