@@ -74,6 +74,7 @@
     {"id":{"name":"oSlowBonusCh","path":"objects/oSlowBonusCh/oSlowBonusCh.yy",},},
     {"id":{"name":"oSpawnData","path":"objects/oSpawnData/oSpawnData.yy",},},
     {"id":{"name":"oSpeedBullet","path":"objects/oSpeedBullet/oSpeedBullet.yy",},},
+    {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"rmFirst","path":"rooms/rmFirst/rmFirst.yy",},},
     {"id":{"name":"rmMenu_lost","path":"rooms/rmMenu_lost/rmMenu_lost.yy",},},

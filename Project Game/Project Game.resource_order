@@ -53,6 +53,7 @@
     {"name":"oSlowBonusCh","order":6,"path":"objects/oSlowBonusCh/oSlowBonusCh.yy",},
     {"name":"oSpawnData","order":12,"path":"objects/oSpawnData/oSpawnData.yy",},
     {"name":"oSpeedBullet","order":6,"path":"objects/oSpeedBullet/oSpeedBullet.yy",},
+    {"name":"oTimer","order":31,"path":"objects/oTimer/oTimer.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
     {"name":"rmMenu_lost","order":7,"path":"rooms/rmMenu_lost/rmMenu_lost.yy",},
     {"name":"rmMenu_settings","order":5,"path":"rooms/rmMenu_settings/rmMenu_settings.yy",},
