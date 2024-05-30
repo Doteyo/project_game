@@ -9,5 +9,7 @@ function sub_time(){
 }
 
 function load_next_room(){
-	room_goto(next_room)
+	global.next = next_room;
+	room_goto(rmMenu_win);
+	
 }

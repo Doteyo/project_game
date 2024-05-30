@@ -1,3 +1,5 @@
+
+
 /// @desc  Function for delayed spawning objects
 /// @param {array} _obj_array [[t,x,y,obj,{}]]
 function spawn_obj(_obj_array){
@@ -23,6 +25,7 @@ function spawn_obj(_obj_array){
 
 /// @desc  Function that executes delayed spawn recursively
 function spawn(){
+	try{
 	var _temp = instance_nearest(0,0,oSpawnData).data;
 	if not instance_nearest(0,0,oSpawnData).converted{
 		_convert_time(_temp);
@@ -42,6 +45,10 @@ function spawn(){
 	if array_length(_temp) = 0
 		return;
 	call_later(_temp[0][0], time_source_units_seconds, spawn);
+	}
+	catch(e){
+		return;
+	}
 }
 
 function create_instace(_inst_arr){
@@ -88,6 +95,7 @@ function spawn_big_bullet(_bull_array){
 /// @param {obj} _object object for spawning
 /// @param {array} _params_array array with params for certain obj
 function structurize_input_spawn(_bull_array, _object , _params_array=[["image_angle", function(a){return a - 90}],"speed","damage"]){
+try{
 var _temp_array = [];
 	for(var i = 0; i<array_length(_bull_array); i++){
 		_temp_array[i] = [];
@@ -102,4 +110,8 @@ var _temp_array = [];
 		}
 	}
 	return _temp_array;
+}
+	catch(e){
+		return;
+	}
 }

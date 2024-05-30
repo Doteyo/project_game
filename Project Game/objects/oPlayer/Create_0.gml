@@ -12,8 +12,12 @@ function take_damage(damage, is_laser=false) {
 			alarm[0] = room_speed;
 		}
 	}
-	if hp <= 0
-		instance_destroy(self);
+	if hp <= 0{
+		//instance_destroy(self);
+		room_goto(rmMenu_lost);
+		//exit;
+	}
+		
 }
 
 
