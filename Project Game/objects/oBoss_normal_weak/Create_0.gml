@@ -11,5 +11,3 @@ function take_damage(_damage){
 		hp -= _damage;
 	}
 }
-
-instance_nearest(x,y,oBoss_normal_main).num_weak += 1;
