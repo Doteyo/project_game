@@ -7,7 +7,7 @@
   "managed":true,
   "name":"oBullet",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"speed","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"speed","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"damage","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
   ],
   "parent":{

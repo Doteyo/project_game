@@ -57,6 +57,7 @@
     {"name":"rmMenu_win","order":6,"path":"rooms/rmMenu_win/rmMenu_win.yy",},
     {"name":"rmMenu","order":4,"path":"rooms/rmMenu/rmMenu.yy",},
     {"name":"rmSecond","order":3,"path":"rooms/rmSecond/rmSecond.yy",},
+    {"name":"rmTest","order":6,"path":"rooms/rmTest/rmTest.yy",},
     {"name":"sfxFinalHit","order":4,"path":"sounds/sfxFinalHit/sfxFinalHit.yy",},
     {"name":"sfxHurt","order":1,"path":"sounds/sfxHurt/sfxHurt.yy",},
     {"name":"sfxPickUp","order":2,"path":"sounds/sfxPickUp/sfxPickUp.yy",},
@@ -86,6 +87,7 @@
     {"name":"sP","order":25,"path":"sprites/sP/sP.yy",},
     {"name":"SpeedBullet","order":8,"path":"sprites/SpeedBullet/SpeedBullet.yy",},
     {"name":"spr_laser_strip","order":13,"path":"sprites/spr_laser_strip/spr_laser_strip.yy",},
+    {"name":"Sprite23","order":15,"path":"sprites/Sprite23/Sprite23.yy",},
     {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"Sprite32","order":15,"path":"sprites/Sprite32/Sprite32.yy",},
     {"name":"Sprite4","order":2,"path":"sprites/Sprite4/Sprite4.yy",},
@@ -93,6 +95,7 @@
     {"name":"Sprite6","order":4,"path":"sprites/Sprite6/Sprite6.yy",},
     {"name":"Sprite7","order":5,"path":"sprites/Sprite7/Sprite7.yy",},
     {"name":"temp_sprite","order":14,"path":"sprites/temp_sprite/temp_sprite.yy",},
+    {"name":"TileSet3","order":2,"path":"tilesets/TileSet3/TileSet3.yy",},
     {"name":"tWall","order":1,"path":"tilesets/tWall/tWall.yy",},
   ],
 }
