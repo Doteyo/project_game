@@ -1,5 +1,6 @@
 _player = instance_nearest(x,y,oPlayer);
-_player.damage *= 2;
 _player.double_damage = true;
-instance_create_depth(x, y, 0, oDoubleDamageYellowCh);
+audio_play_sound(sfxPickUpBad, 10, false);
+instance_create_depth(x, y, 0, oDoubleDamageCh);
 instance_destroy(self);
+

@@ -8,11 +8,13 @@ function take_damage(damage, is_laser=false) {
 	if (!is_invinsible) {
 		hp -= double_damage ? damage * 2 : damage;
 		if (!is_laser) {
+			audio_play_sound(sfxHurt, 10, false);
 			become_invisible(true);
 			alarm[0] = room_speed;
 		}
 	}
 	if hp <= 0{
+		audio_play_sound(sfxFinalHit, 10, false);
 		//instance_destroy(self);
 		room_goto(rmMenu_lost);
 		//exit;

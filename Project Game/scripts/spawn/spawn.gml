@@ -47,6 +47,7 @@ function spawn(){
 	call_later(_temp[0][0], time_source_units_seconds, spawn);
 	}
 	catch(e){
+		show_debug_message(e);
 		return;
 	}
 }
@@ -112,6 +113,7 @@ var _temp_array = [];
 	return _temp_array;
 }
 	catch(e){
+		show_debug_message(e);
 		return;
 	}
 }
