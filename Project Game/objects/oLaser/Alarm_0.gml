@@ -1,1 +1,2 @@
-go = true;
+create_laser();
+go = true

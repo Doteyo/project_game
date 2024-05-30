@@ -1,6 +1,12 @@
+hpbar_width = 300;
+hpbar_height = 32;
+hpbar_x = 20;
+hpbar_y = 20;
+
+
 function take_damage(damage, is_laser=false) {
 	if (!is_invinsible) {
-		hp -= damage;
+		hp -= double_damage ? damage * 2 : damage;
 		if (!is_laser) {
 			become_invisible(true);
 			alarm[0] = room_speed;

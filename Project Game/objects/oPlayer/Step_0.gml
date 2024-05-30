@@ -13,6 +13,7 @@ var _move_y = (_keydown - _keyup) * movespd;
 
 
 // Horizontal Collisions
+
 if (place_meeting(x + _move_x,y,oWall)) {
      while (!place_meeting(x+sign(_move_x),y,oWall)) {
         x+=sign(_move_x);
@@ -20,6 +21,7 @@ if (place_meeting(x + _move_x,y,oWall)) {
      _move_x = 0;
 }
 x+=_move_x
+
 
 // Vertical Collisions
 if (place_meeting(x,y+ _move_y,oWall)) {
@@ -37,6 +39,11 @@ y=clamp(y, 14, room_height-14);
 if mouse_check_button_pressed(mb_left) | keyboard_check_pressed(vk_space) {
 	if (!cannot_shoot) {
 		 var _bullet_id = instance_create_depth(x, y, 10, oPBullet);
+		_bullet_id.damage = damage;
 		_bullet_id.direction = 90;
 	}
+}
+
+if place_meeting(x, y, oLaserStrip) {
+	take_damage(1, true);
 }
