@@ -30,7 +30,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"hp_max","filters":[],"listItems":[],"multiselect":false,"name":"hp_max","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"hp_max","filters":[],"listItems":[],"multiselect":false,"name":"hp_max","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"num_weak","filters":[],"listItems":[],"multiselect":false,"name":"num_weak","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
