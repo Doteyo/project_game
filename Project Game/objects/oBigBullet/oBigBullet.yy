@@ -5,8 +5,8 @@
   "managed":true,
   "name":"oBigBullet",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"speed","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"damage","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"speed","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBullet_parent","path":"objects/oBullet_parent/oBullet_parent.yy",},"propertyId":{"name":"damage","path":"objects/oBullet_parent/oBullet_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
   ],
   "parent":{
     "name":"Объекты",

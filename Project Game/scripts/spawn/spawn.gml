@@ -94,8 +94,12 @@ function spawn_speed_bullet(_bull_array){
 
 /// @desc Function for delayed spawning Bomb
 /// @param {array} _bull_array [[t,x,y, x_pos*,y_pos*,movespd*]]
-function spawn_bomb(_bomb_array){
+function spawn_bomb1(_bomb_array){
 	spawn_obj(structurize_input_spawn(_bomb_array, oBomb, ["x_pos","y_pos","movespd"]));
+}
+
+function spawn_bomb2(_bomb_array){
+	spawn_obj(structurize_input_spawn(_bomb_array, oBomb_preparation, ["x_pos","y_pos","movespd"]));
 }
 
 /// @desc Function for delayed spawning Poison Bullet

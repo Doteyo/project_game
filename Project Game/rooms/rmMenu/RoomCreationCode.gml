@@ -1,1 +1,1 @@
-global.next = rmFirst;
+global.next = rmTest;
