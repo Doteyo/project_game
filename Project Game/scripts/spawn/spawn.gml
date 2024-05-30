@@ -4,15 +4,16 @@
 /// @param {array} _obj_array [[t,x,y,obj,{}]]
 function spawn_obj(_obj_array){
 	var _temp = [];
-	array_sort(_obj_array, function(e1, e2){return e1[0] > e2[0]});
+	//array_sort(_obj_array, function(e1, e2){return e1[0] > e2[0]});
 	if instance_nearest(0,0,oSpawnData) < 0{
 		instance_create_depth(0,0,10,oSpawnData,{data: _obj_array});
 	}
 	else {
 		_temp = array_concat(instance_nearest(0,0,oSpawnData).data, _obj_array)
-		array_sort(_temp, function(e1, e2){return e1[0] > e2[0]});
+		//array_sort(_temp, function(e1, e2){return e1[0] > e2[0]});
 		instance_nearest(0,0,oSpawnData).data = _temp;
 	}
+	//spawn(_temp);
 	if array_length(instance_nearest(0,0,oSpawnData).last) = 0
 		instance_nearest(0,0,oSpawnData).last = [_obj_array[0][0], call_later(_obj_array[0][0],time_source_units_seconds,spawn)];
 	else if instance_nearest(0,0,oSpawnData).last[0] > _temp[0][0]{
@@ -28,6 +29,7 @@ function spawn(){
 	try{
 	var _temp = instance_nearest(0,0,oSpawnData).data;
 	if not instance_nearest(0,0,oSpawnData).converted{
+		array_sort(_temp, function(e1, e2){return e1[0] > e2[0]});
 		_convert_time(_temp);
 		instance_nearest(0,0,oSpawnData).data = _temp;
 		instance_nearest(0,0,oSpawnData).converted = true;
@@ -62,19 +64,12 @@ function create_instace(_inst_arr){
 /// @desc Converts time to relative
 /// @param {array} _obj_array [[t,x,y,obj,{}]]
 function _convert_time(_obj_array){
+	var _last = _obj_array[0][0];
 	for(var i = 1; i<array_length(_obj_array); i++)
 	{
-		if _obj_array[i-1][0] == 0{
-			var _j = 0
-			for(_j = i -1; _j>=-1; _j--){
-				if _obj_array[_j][0] != 0
-					break
-			}
-			if _j != -1
-				_obj_array[i][0] -= _obj_array[_j][0];
-		}
-		else
-			_obj_array[i][0] -= _obj_array[i-1][0];
+		var _temp = _obj_array[i][0];
+		_obj_array[i][0] -= _last;
+		_last = _temp;
 	}
 }
 
