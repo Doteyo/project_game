@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-if (keyboard_check(ord("Q"))) {
-	image_angle += 5;
-	create_laser();
-=======
 if (go) {
 	for (var i = 0; i < max_length; i++) {
 		current_x = x + lengthdir_x(i, direction);
@@ -28,7 +23,6 @@ if (go) {
 		}
 	}
 	ds_list_destroy(_list);
->>>>>>> Stashed changes
 }
 
 
