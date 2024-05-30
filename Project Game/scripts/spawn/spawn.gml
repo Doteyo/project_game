@@ -91,6 +91,24 @@ function spawn_big_bullet(_bull_array){
 	spawn_obj(structurize_input_spawn(_bull_array, oBigBullet));
 }
 
+/// @desc Function for delayed spawning Speed Bullets
+/// @param {array} _bull_array [[t,x,y,angle*,speed*,damage*]]
+function spawn_speed_bullet(_bull_array){
+	spawn_obj(structurize_input_spawn(_bull_array, oSpeedBullet));
+}
+
+/// @desc Function for delayed spawning Bomb
+/// @param {array} _bull_array [[t,x,y, x_pos*,y_pos*,movespd*]]
+function spawn_bomb(_bomb_array){
+	spawn_obj(structurize_input_spawn(_bomb_array, oBomb, ["x_pos","y_pos","movespd"]));
+}
+
+/// @desc Function for delayed spawning Poison Bullet
+/// @param {array} _bull_array [[t,x,y,angle*,speed*]]
+function spawn_poison_bullet(_poison_bullet_array){
+	spawn_obj(structurize_input_spawn(_poison_bullet_array, oPoison));
+}
+
 /// @desc Function for structurizing user input for spawning
 /// @param {array} _bull_array [[t,x,y,angle*,speed*,damage*]]
 /// @param {obj} _object object for spawning
