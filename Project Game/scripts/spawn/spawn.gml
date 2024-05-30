@@ -29,7 +29,7 @@ function spawn(){
 	try{
 	var _temp = instance_nearest(0,0,oSpawnData).data;
 	if not instance_nearest(0,0,oSpawnData).converted{
-		array_sort(_temp, function(e1, e2){return e1[0] > e2[0]});
+		array_sort(_temp, function(e1, e2){return e1[0] - e2[0]});
 		_convert_time(_temp);
 		instance_nearest(0,0,oSpawnData).data = _temp;
 		instance_nearest(0,0,oSpawnData).converted = true;

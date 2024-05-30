@@ -4,6 +4,16 @@ function defeated(){
 }
 
 image_blend = c_black;
-instance_create_depth(x-8,y+56,10,oBoss_normal_weak)
-instance_create_depth(x+56,y+56,10,oBoss_normal_weak)
+var _weak_points = [[-8,56],[24,56],[56,56]];
+
+for(var i = 0; i<array_length(_weak_points); i++){
+	instance_create_depth(x+_weak_points[i][0],y+_weak_points[i][1],10,oBoss_normal_weak, {hp:hp_max/array_length(_weak_points)})
+}
+
 hp = hp_max;
+
+function take_damage(_damage){
+	hp -= _damage;
+	if hp <= 0
+		defeated();
+}
