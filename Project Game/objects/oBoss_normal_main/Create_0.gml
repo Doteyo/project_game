@@ -1,6 +1,7 @@
 function defeated(){
 	image_blend = c_yellow;
 	alarm[0] = room_speed * 3;
+	instance_destroy(instance_nearest(x,y, oTimer));
 }
 
 instance_create_depth(0,0,10,oTimer);
